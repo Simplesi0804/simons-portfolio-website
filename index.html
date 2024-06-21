@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simon Bluck Portfolio Website</title>
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+            rel="stylesheet">
+    
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://kit.fontawesome.com/1f5ccb9d5a.js" crossorigin="anonymous"></script>
+
+    
+        <!-- Your custom scripts go here -->
+        <script>
+            $(function () {
+                var icons = {
+                    header: "ui-icon-circle-arrow-e",
+                    activeHeader: "ui-icon-circle-arrow-s"
+                };
+                $("#accordion").accordion({
+                    icons: icons
+                });
+                $("#toggle").button().on("click", function () {
+                    if ($("#accordion").accordion("option", "icons")) {
+                        $("#accordion").accordion("option", "icons", null);
+                    } else {
+                        $("#accordion").accordion("option", "icons", icons);
+                    }
+                });
+            });
+        </script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7227049130135878"
+crossorigin="anonymous"></script>
+    </head>
+        <body>
+
+            <header>
+                <!-- <div class="logo">
+                    <img src="Images/Standard Logo Files/Monochrome on Transparent.png" alt="">
+                </div> -->
+                
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#myskills" class="nav__link">My Learning, Skills and Qualifications</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">My Digital capabilities</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">My Digital Projects</a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+         
+        
+
+        <div class="next-section fade-in-delay">
+
+            <div>
+                <h1 style="justify-content: center;align-items: center;text-align: center">
+                Hi, my name is <strong>Simon Lee Bluck</strong>
+            </h1>
+        </div>
+            
+            <section class="intro" id="home">
+                <!-- <h1 class="section__title section__title--intro">
+                    Hi, my name is <strong>Simon Lee Bluck</strong>
+                </h1> -->
+                <!-- <p class="section__subtitle section__subtitle--intro"></p> -->
+
+                
+                <img src="simon1.JPG" alt="a picture of Simon in the sun!" class="intro__img">
+                
+            </section>
+
+            
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about" style="text-align: center;">About Me</h2>
+            <!-- <p class="section__subtitle section__subtitle--about"></p> -->
+            
+            <div class="about-me__body">
+                <p>
+                    For the past decade, I have thrived in a dynamic and evolving field, where my roles have ranged from leading teams of 8 to 40 members to delving into the world of digital application development. 
+                    In the last three to four years, my passion for digital development has flourished, driving me to gain expertise in Google Sheets, Google App Scripts, 
+                    and <a id="link" href="https://www.appsheet.com" target="_blank" >AppSheet.com</a>. I am also continuously enhancing my skills in HTML5 and CSS3 while exploring the full range of Microsoft's platform.
+                    Below, you'll discover a curated selection of my projects, showcasing the innovative applications I've built and implemented. Explore my work and see the creativity and technical prowess that I bring to 
+                    every project.
+                </p>
+                <p>Contact Details:</p>
+                <ul>
+                    <li>Email Address: <a id="link" href="https://www.simplesi0804@googlemail.com" target="_blank" ></a>simplesi0804@googlemail.com</li></ul>
+                <!--     <li>Contact Number: 07958140713</li>
+                    
+                -->
+            </div>
+
+            
+            <div>
+                <ul>
+                    <li><a href="Simon Lee_Bluck_CV 2024.pdf" target="_blank">My CV - click to view</a></li>
+                    <li><a id="link" href="https://www.upwork.com/freelancers/simonbluck?viewMode=1" target="_blank" >My Upwork Profile</a></li>
+                <li><a id="link" href="https://www.fiverr.com/simple_simon08?public_mode=true" target="_blank" >My fiverr Profile</a></li>
+                
+            </ul>
+            </div>
+            
+            <!-- <img src="simon.jpg" alt="Simon in a suit" class="about-me__img"> -->
+        </section>
+
+        <section class="myskills" id="myskills">
+            <h2 class="section__title section__title--about" style="text-align: center;">My Skills, Qualifications and Learning</h2>
+            <!-- <p class="section__subtitle section__subtitle--about">This section is about what im currently learning, I'm skilled at and qualifications I have.</p> -->
+            
+            <div>
+            <div id="accordion">
+
+                <div class="my-skills-h4"
+                    style="border: 2px solid var(--clr-light);
+                    margin: 2.5px;
+                    width: 275px;
+                    padding-left: 5px;
+                    cursor: pointer;">
+                    <h4>My Skills</h4></div>
+                <div>
+                    <ul class="skills-list">
+                        <li>Full UK Driving License</li>
+                        <li>Counterbalance Fork Lift Truck License</li>
+                        <li>First Aider</li>
+                        <li>Incident Controller</li>
+                        </ul>
+
+                </div>
+                
+                <div class="my-skills-h4"
+                style="border: 2px solid var(--clr-light);
+                    margin: 2.5px;
+                    width: 275px;
+                    padding-left: 5px;
+                    cursor: pointer;">
+                    <h4>My Qualifications</h4></div>
+                    <ul class="skills-list">
+                        <li>I am currently doing a Data Literacy/Technician Level 3 apprenticeship</li>
+                        <li>NVQ Level 2 - Business Improvement Techniques which covers...
+                            
+                            <ol>
+                                <li>Communication Cell</li>
+                                <li>Visual Management</li>
+                                <li>Creative Problem Solving</li>
+                                <li>Standard Work</li>
+                                <li>Workplace Audit</li>
+                            </ol>
+                        </li>
+                        <li>IAO Level 3 Diploma in Fitness Instructing and Personal Training</li>
+                        
+                    </ul>
+
+                <div class="my-skills-h4"
+                    style="border: 2px solid var(--clr-light);
+                    margin: 2.5px;
+                    width: 275px;
+                    padding-left: 5px;
+                    cursor: pointer;">
+                    <h4>My Learning</h4></div>
+                <div>
+                    <div class="my-learning-clicked">
+                        
+                    <ul class="skills-list">
+                        <li>I am currently doing a Data Technician Level 3 Apprenticeship due to complete in November 2024</li>
+                        <li>Learning HTML</li>
+                        <li>Learning CSS</li>
+                        <li>Learning JavaScript</li>
+                        <li>I have also started utilizing the website <a id="link" href="https://www.freecodecamp.org/" target="_blank">Free-Code-Camp.com</a></li>
+                        <li>I increase my learning by purchasing courses via <a id="link" href="https://www.udemy.com" target="_blank">Udemy.com</a></li>
+                        <li>I am currently working through
+                            <br> 
+                            <a id="link" href="https://www.udemy.com/course/microsoft-office-excel-word-access-powerpoint/?couponCode=ST19MT61724" target="_blank">Ultimate Microsoft Office; Excel, Word, PowerPoint & Access</a> 
+                                and 
+                                <br>
+                            <a id="link" href="https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/?couponCode=ST19MT61724" target="_blank">Microsoft Power BI Desktop for Business Intelligence</a> 
+                            and 
+                            <br>
+                            <a id="link" href="https://www.udemy.com/course/the-comprehensive-data-analyst-course/?couponCode=ST19MT61724" target="_blank">The Comprehensive Data Analyst Course</a> 
+                            <br>
+                            purchased via Udemy.com, </li>
+                                                
+                        
+                        
+                        <h5 style = "margin-top: 20px;">Below is some information on the courses i have purchased and the status of them</h5>
+                        
+                        
+                            <h5 style = "margin-top: 20px; color: orange;text-decoration: underline">Courses bought but yet to start ⌛</h5>
+                            <ol>
+                                <li><a id="link" href="https://www.udemy.com/course/become-a-wordpress-developer-php-javascript/" >Become a Wordpress Developer: Unlocking Power With Code]</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/" >Flutter & Dart - The Complete Guide [2023 Edition]</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/the-complete-modern-javascript-course/" >The Complete JavaScript Made Easy 2023: From Zero to Expert!</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/complete-python-bootcamp/" target="_blank">The Complete Python Bootcamp From Zero to Hero in Python</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/unreal-engine-5-the-ultimate-game-developer-course/" target="_blank">Unreal Engine 5 C++ The Ultimate Game Developer Course</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/mastering-microsoft-power-apps/" target="_blank">Mastering Microsoft Power Apps 2023: From Zero to Hero</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/excel-vba-and-macros-course/?couponCode=ST19MT61724" target="_blank">Unlock Excel VBA and Excel Macros</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/microsoft-excel-power-query-power-pivot-dax/?couponCode=ST19MT61724" target="_blank">Microsoft Excel: Business Intelligence w/ Power Query & DAX</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/advanced-google-apps-script-and-api-calls/?couponCode=ST19MT61724" target="_blank">Advanced Google Apps Script and API with 10 Projects</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/alan-sharpe-copywriting-masterclass/?couponCode=ST19MT61724" target="_blank">30-hr Copywriting Masterclass + ChatGPT tips</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/learn-ethical-hacking-using-the-cloud-from-scratch/?couponCode=ST19MT61724" target="_blank">Learn Ethical Hacking Using The Cloud From Scratch
+                                </a></li>
+                            </ol>
+
+                            <h5 style = "color: darkgreen;text-decoration: underline;">Courses Complete ✔</h5>
+                            <ol>
+                                <li><a id="link" href="https://www.udemy.com/course/google-sheets-masterclass/">Google Sheets - The Comprehensive Masterclass</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/google-spreadsheet-basics-a-free-introduction/">Google Spreadsheet Basics - The Comprehensive Masterclass</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/web-application-with-google-apps-script/?couponCode=ST19MT61724">Web Application with Google Apps Script</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/learn-google-app-script-from-zero-to-pro-level/" target="_blank">Google Apps Script: From Level Zero with 20 Projects (2023)</a></li>
+                                <li><a id="link" href="https://www.udemy.com/course/create-business-applications-with-appsheet/">Create Business Applications with AppSheet</a></li>
+                                <li><a id="link" href="http://www.udemy.com/course/the-complete-web-developer-course-2">The Complete Web Developer Course 3.0</a></li>                           
+                            
+                            </ol>
+                        </div>
+                        
+                    </ul>
+
+                </div>
+                
+
+            </div>
+        </div>
+            
+            <img src="" alt="" class="about-me__img" style="z-index: -10;">
+        </section>
+        
+            <!-- My services -->
+                <section class="my-services" id="services">
+                    <h2 class="section__title section__title--services">Digital Capabilities</h2>
+                    <div class="services">
+                        <div class="service">
+                            <h3>Frontend Web Design</h3>
+                            <p>I recently started my journey in front-end web design, exploring the world of visually appealing and user-friendly websites. Mastering HTML, 
+                                CSS, and JavaScript frameworks, I immerse myself in the tools and technologies that drive front-end development. With a focus on responsive 
+                                layouts, engaging animations, and user experience optimization, I stay updated with the latest design trends and best practices. Each project 
+                                is an opportunity for skill refinement and contribution to the dynamic field of web design.</p>
+                        </div> <!-- / service -->
+                        
+                        <div class="service">
+                            <h3>Workplace Application Design </h3>
+                            <p>I have become skilled in building powerful applications with <a id="link" href="https://www.appsheet.com" target="_blank" >AppSheet.com</a>, leveraging its intuitive platform without extensive coding knowledge. 
+                                From UI design to complex workflows and data management, I efficiently utilize the platform's capabilities. Whether building forms, integrating 
+                                data sources, or implementing automation, I quickly transform ideas into functional applications. Each project expands my skills, allowing me 
+                                to deliver innovative solutions through <a id="link" href="https://www.appsheet.com" target="_blank" >AppSheet.com</a>.</p>
+                        </div> <!-- / service -->
+                        
+                        <div class="service">
+                            <h3>G Suite Utilization</h3>
+                            <p>I have developed exceptional proficiency in using Google Sheets, Docs, Slides, and Forms. I can manipulate data, create complex formulas, and generate insightful reports in Sheets. In Docs, I excel at advanced formatting, collaborative editing, and version control. My talent in Slides lies in designing visually captivating presentations. With Forms, I create comprehensive surveys, quizzes, and feedback forms. Overall, my dedication and mastery of these G Suite tools make me a formidable user.</p>
+                        </div> <!-- / service -->
+                        
+                    </div> <!-- / services -->
+                    
+                    <!-- <a href="#work" class="btn">My Work</a> -->
+                </section>
+
+                <!-- My Work -->
+                <section class="my-work" id="work">
+                    <h2 class="section__title section__title--work">My Digital Projects</h2>
+                    <p class="section__subtitle section__subtitle--work">Below are the digital platforms that i have used to create my projects. Click on them for the information</p>
+                    
+                    <div class="portfolio">
+                        <!-- Portfolio item 01 -->
+                        <a href="my-web-design-items.html" target="_blank" class="portfolio__item">
+                            <img src="Images/web-desiging.jpg" alt="" class="portfolio__img none-appsheet">
+                        </a>              
+                        <!-- Portfolio item 02 -->
+                        <a href="my-app-items copy.html" target="_blank" class="portfolio__item">
+                            <img src="Images/appsheet321.jpeg" alt="" class="portfolio__img appsheet">
+                        </a>
+                        
+                        <!-- Portfolio item 03 -->
+                        <a href="my-gSuite-items.html" target="_blank" class="portfolio__item">
+                            <img src="Images/gsuite.jpg" alt="" class="portfolio__img appsheet">
+                        </a>
+                        <!-- Portfolio item 03 -->
+                        <!-- <a href="portfolio-item.html" class="portfolio__item">
+                            <img src="Images/appsheet.jpg" alt="" class="portfolio__img appsheet">
+                        </a> -->
+                        
+                        
+                    </div>
+                </section>
+
+                <!-- My Certificates -->
+                <section class="my-cert" id="cert">
+                    <h2 class="section__title section__title--cert">My Certificates</h2>
+                    <p class="section__subtitle section__subtitle--cert">A selection of certificates awarded to me</p>
+                    
+                    <div class="cert-portfolio">
+                        <!-- Portfolio item 01 -->
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/Func Skills Eng.png" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/Maths Func Skill1.png" alt="" class="cert__portfolio__img">
+                        </a>             
+                                    
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/NVQ1.png" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/NVQ2.png" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/pt-cert.jpg" alt="" class="cert__portfolio__img">
+                        </a>
+                        
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/UPW Man Acred.png" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/GoogleSheets.jpg" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/Google Apps Script Certificate.jpg" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/Web Applications with App Scripts.jpg" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/Web Developer Course.jpg" alt="" class="cert__portfolio__img">
+                        </a>
+                        <a href="#" class="cert__portfolio__item">
+                            <img src="Images/rwdfcc.png" alt="" class="cert__portfolio__img free-code-camp" >
+                        </a>
+
+                        
+                        
+                    
+                    </div>
+                </section>
+
+
+            </div>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    
+                    <a style="font-weight: bold; font-size: 1.6em">Check Out Some of my Profiles</a>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="https://www.upwork.com/freelancers/simonbluck?viewMode=1" target="_blank" title="Upwork">
+                                <i class="fa-brands fa-upwork fa-fade fa-2xl"></i>
+                            </a>
+                        </li>
+                        <!-- <li class="social-list__item">
+                            <a class="social-list__link" href="https://twitter.com">
+                                <i class="fab fa-twitter fa-bounce" ></i></a>
+                        </li> -->
+
+                        <li class="social-list__item">
+                            <a class="social-list__link" href="https://www.linkedin.com/in/simon-bluck" target="_blank" title="linkedin">
+                                <i class="fab fa-linkedin fa-fade fa-2xl"></i>
+                            </a>
+                        </li>
+                        
+
+                        <!-- <li class="social-list__item">
+                            <a class="social-list__link" href="https://github.com">
+                                <i class="fab fa-discord fa-bounce"></i></a> 
+                        </li> -->
+
+                    </ul>
+                </footer>
+
+                <script src="js/index.js"></script>
+
+            
+            
+        </body>
+</html>
